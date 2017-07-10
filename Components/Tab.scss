@@ -1,0 +1,240 @@
+.ems-tab {
+    line-height: 1;
+    ul.lvl1 {
+        display: table;
+        width: 100%;
+        text-align: center;
+        border: 1px solid $borderColor;
+        > li {
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            width: 33.333%;
+            border-right:1px solid $borderColor;
+            &:last-child {border:0;}
+            &.selected {
+                span {
+                   color:$colorWhite;
+                }
+            }
+            a.title {
+                position: relative;
+                display: block;
+                padding: 17px 10px;
+                text-align: center;
+                text-decoration: none;
+                span{
+                    font-size: 15px;
+                    transition: all 0.32s ease;
+                }
+            }
+            &.more {
+                > a.title {
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        margin-left: 20px;
+                    }
+                }
+                &:hover {
+                    > a.title {
+                        background: #e9e9e9;
+                    }
+                }
+            }
+            &:hover {
+                ul.lvl2 {
+                    display: block;
+                }
+            }
+            .content {
+                display: none;
+            }
+            &.selected {
+                .content {
+                    display: block;
+                }
+            }
+            ul.lvl2 {
+                display: none;
+                position: absolute;
+                z-index: 5;
+                width: 101%;
+                left: -1px;
+                > li {
+                    > a.title {
+                        position: relative;
+                        display: block;
+                        padding: 12px 10px;
+                        text-decoration: none;
+                        border-width: 0 1px 1px 1px;
+                        border-style: solid;
+                        border-color: #ebebeb;
+                        color: #999;
+                        line-height: 1.3;
+                        background: #fff;
+                        transition: all 0.32s ease;
+                    }
+                }
+            }
+           &.selected a {
+               span{
+
+               }
+           }  
+        }
+    }
+
+    &-horizontal {
+        > .ems-tab-inner {
+            .dropdown > span{
+                    display: none;
+                }
+            > ul.lvl1 {
+                > li {
+                    &.selected {
+                        > a.title span{
+
+                        }
+                    }
+                    ul.lvl2 {
+                        > li {
+                            &.selected {
+                                > a.title span{
+ 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-horizontal-content {
+        > .ems-tab-inner {
+            > ul {
+                &.content-js {
+                    margin-top: 20px;
+                    font-size: 17px;
+                    line-height: 25px; 
+                    > li {
+                        vertical-align: top;
+                        display: none;
+                        h5 {
+                            font-weight: bold;
+                            margin: 0;
+                            font-size: 17px;
+                            margin-top: 20px;
+                        }
+                        &.selected {
+                            display: block;
+                        }
+                        a.title {
+                            display: none;
+                        }
+                        & .content {
+                            margin:50px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-vertical {
+        > .ems-tab-inner {
+            > ul.lvl1 {
+                > li {
+                    display: block;
+                    > a.title {
+                        border: none;
+                        text-align: left;
+                        font-size: 27px;
+                        color: #333;
+                        font-weight: 700;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            z-index: 2;
+                            width: 100%;
+                            height: 100%;
+                            box-shadow: 0px 2px 5px -2px #000;
+                            margin-left: 0;
+                            border: none;
+                        }
+                        > span {
+                            display: block;
+                            position: relative;
+                            max-width: $siteContainerWidth;
+                            margin: 0 auto;
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                right: 20px;
+                                top: 50%;
+                                margin-top: -6px;
+                            }
+                        }
+                    }
+                    &.selected {
+                        > a.title {
+                            background: #fff;
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ems-tab .ems-tab-inner > .content-js > li > .content{height:0;overflow:hidden;will-change:opacity;opacity:0;transition: opacity 0.32s ease;}
+.ems-tab .ems-tab-inner > .content-js > li.selected > .content{
+    height:inherit;
+    overflow:visible;
+    opacity:1;
+    ul {margin-bottom:20px;}
+    span {font-size:25px; display: block; margin-bottom: 35px;}
+    img {
+    float: right;
+    margin: 0 0 33px 50px;
+        
+    } 
+    .detailShare {
+            float:right;
+            clear: both;
+        & a {
+            font-size:14px;
+            line-height: 12px;
+            padding:12px 20px;
+            letter-spacing: 1.2px;
+            border:1px solid $borderColor;
+            margin:0 0 30px 50px;
+            display:inline-block;
+            &:hover {
+                color:$colorWhite;
+            }
+            &:before {
+                content: "\e916"; 
+                font-family: 'icomoon';
+                font-size: 17px;
+                margin-right:16px;
+            }
+        }
+    }
+    .popupTaksit {  
+        font-size: 15px;
+         td, th {}
+        .taksit_banka {
+            span {margin:0;}
+            img {
+                margin: 0;
+                float: none;
+                width: auto;
+            }
+        }
+    }
+}

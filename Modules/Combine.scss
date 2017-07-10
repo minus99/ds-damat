@@ -1,0 +1,183 @@
+.urunDetay{
+    &.urunTakim {
+        .inner-row-1 {
+            width: calc(100% - 630px);
+        }
+        .inner-row-2 {
+            width: 630px;
+            padding-left: 40px;
+        }
+        .ems-prd-detail-tab.ems-tab.ems-tab-horizontal.ems-tab-horizontal-content.plugins-active{ display: none; }
+
+        .ems-prd-add-to-fav{ display: none; }
+
+        .product-kombin-wrap{ display:block !important;
+
+            .urnList{
+
+                .ems-prd-list-sort{
+
+                    &:after{ content: none; }
+                }
+            }
+        }
+
+        .urnList{
+
+            ul.emosInfinite.ems-inline{ display: block; 
+
+                li.ems-prd{ min-height: 200px; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; border-bottom: 1px solid #d7d7d7; padding: 20px 0;
+                    
+                    &:first-child{ border-top: 1px solid #d7d7d7; }
+                    
+                    > .ems-prd-inner { display: block; margin: 0; text-align: left;
+                    
+                        .ems-prd-wrp{ width: 160px; float: left; }
+                    
+                        .ems-prd-name{ width: calc(100% - 160px); margin-top: 0; float: left; padding-left: 20px;
+                    
+                            > a{ text-align: left; max-width: inherit; font-size: 20px; font-weight: 600; color: #000000; }
+                        }
+                    
+                        .ems-prd-price{ width: calc(100% - 160px); display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; margin: 0; max-width: inherit; float: left; text-align: left; margin:15px 0; padding-left: 20px;
+                            
+                            &:before, &:after{ content:none; }
+
+                            .ems-prd-price-first{ order:2;
+                                
+                                &:before{ content:'t'; font-size:13px; margin-right: 3px; }
+                                
+                                &:empty:before{ content:none; }
+                                
+                                .urunListe_brutFiyat{ display: inline-flex; font-size: 20px !important;
+
+                                    .pb1{ display: none; }
+                                
+                                }
+                            }
+                            .ems-prd-price-selling{ order:1; color:#000; margin-left:0;
+                                
+                                .urunListe_satisFiyat{ font-size: 20px !important; display: inline-flex;
+                                    
+                                    .pb1{ display: none; }
+                                
+                                }
+                                
+                                &:before{ content: 't'; font-family: "TL"; font-size: 13px; font-weight: normal; display: inline-block; margin-right: 3px; }
+                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ems-prd-cart-wrap {
+            position: absolute;
+            left: 180px;
+            bottom: 0px;
+            width: calc(100% - 180px);
+            display: flex !important;
+            flex-wrap:  wrap;
+            justify-content: space-between;
+            > div {
+                width: calc(50% - 11px);
+            }
+            .sStylerMainWrp {
+                display: none; 
+            }
+            .urunListe_secenek {
+                position: relative;
+                width:100%;
+                max-width: 185px;
+                border: 1px solid #000;
+                height: 40px;
+                text-align: left;
+                .urunSecenek_baslik1 {
+                    display: inline-block!important;
+                    vertical-align: top;
+                    position: absolute;
+                    left: 10px;
+                    top: 12px;
+                }
+            }
+            .dropdown-trigger {
+                display: inline-block!important;
+                vertical-align: top;
+                width: 100%;
+                padding-left: 52px;
+                color: #fff;
+                > span {
+                    display: inline-block;
+                    vertical-align: top;
+                    height: 40px;
+                    line-height: 42px;
+                    text-align: left;
+                    padding: 0 0 0 10px; 
+                    &::after {
+                        content: "";
+                        width: 0px;
+                        border: 5px solid transparent;
+                        border-top-color: $colorDefault;
+                        position: absolute;
+                        right: 10px;
+                        top: 16px;
+                    }
+                }
+            }
+            .dropdown-options {
+                position: absolute;
+                left: 0;
+                top: 39px;
+                width: 100%;
+                border: 1px solid $colorDefault;
+                padding: 5px;
+                text-align: left;
+                background: $colorWhite;
+                z-index: 9;
+                display: none !important;
+                border-top-width: 0px;
+                > a {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 46.5%;
+                    text-align: center;
+                    background: #efefef;
+                    padding: 2px; 
+                    margin: 2% 1%;
+                    height: 25px;
+                    line-height: 18px;
+                }
+            }
+            .urunListe_secenek1 {
+                &.opened {
+                    .dropdown-options {
+                        display: block !important;
+                    }
+                }
+                &.item-selected {
+                    .dropdown-trigger {
+                        color: $colorDefault;
+                    }
+                }
+            }
+            .urunListe_adet {
+                display: none;
+            }
+            .urunListe_sepetGrup {
+                .urunListe_sepet {
+                    table,
+                    table * {
+                        width: 100%;
+                        display: block;
+                    }
+                    .btnSepeteAt {
+                        padding: 12px 20px;
+                        background-color: #1e50a4;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+

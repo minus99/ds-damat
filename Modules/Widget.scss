@@ -1,0 +1,25 @@
+ .visilabs-widget {
+     .swiper-title {
+         font-size:15px;
+         text-align: center;
+         padding: 27px 0 15px 0;
+         border-top:1px solid $borderColor;
+         letter-spacing: 1px;
+         h2 {margin:0;}
+     }  
+     & .bx-controls-direction a {
+         border:1px solid $borderColor;
+         i {
+             padding:12px;
+         }
+         &.bx-prev {
+             left:0;
+         }
+         &.bx-next {
+             right:0;
+         }
+     }
+     & .bx-default-pager {
+            margin: 32px 0;
+     }
+ }

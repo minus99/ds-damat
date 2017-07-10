@@ -1,0 +1,105 @@
+/*
+ * about-full-page
+ */
+
+.company-full-type {
+    > .row-1 {
+        width: 100% !important;
+        padding-right: 0px !important;
+    }
+    .about-full-banner {
+        width: 100%;
+        height: 630px;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center center;
+        h1 {
+            font-size: 40px;
+            font-family: $fontBold;
+            color: $colorWhite;
+        }
+    }
+    > .row-2 {
+        margin: 0 auto;
+        max-width: 95%;
+        padding: 0 20px;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        .kutuSolMenuTree {
+            width: 250px;
+        }
+        > span {
+            width: calc(100% - 300px);
+        }
+    }
+    .about-list {
+        ul {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+            -webkit-column-gap: 37px;
+            -moz-column-gap: 37px;
+            column-gap: 37px;
+            padding: 67px 0px;
+            li {
+                min-height: 500px;
+                padding-bottom: 40px; 
+                img { width: 100%; }
+                .small-text {
+                    margin: 0px 0px 30px 0px;
+                    p {
+                        font-size: 16px;
+                        line-height: 1.38;
+                        margin: 0px 0px 30px 0px;
+                    }
+                }
+                .big-text {
+                    margin: 40px 0px 30px 0px;
+                    p {
+                        font-size: 30px;
+                        line-height: 1.17;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+ * lookbook
+ */
+
+.lookbook-page {padding-top: 30px; padding-bottom: 30px;} 
+
+@media screen and (max-width: $breakpointSM){
+    .company-full-type {
+        .about-full-banner {
+            height: 400px;
+            h1 {
+                font-size: 30px;
+                letter-spacing: 4px;
+            }
+        }
+        > .row-2 > span {
+            width: 100%;
+        }
+        .about-list ul {
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+            li { min-height: 1px; }
+        }
+    }
+}

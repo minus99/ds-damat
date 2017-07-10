@@ -1,0 +1,147 @@
+.ems-service-list .service-list-content { max-width: 1280px; margin: 0 auto; }
+
+.ems-service-list .mod-service-list-header { margin: 0 0 30px 0; padding: 0 30px;}
+
+.ems-service-list .mod-service-list-header span[id$='lbfKUTU_YETKILISERVISLER'] { font-size:20px; margin:25px 0 35px 0; display:none; text-align:center;}
+
+.ems-service-list .mod-service-list-header span[id$='lbfKUTU_YETKILISERVISLER'] a { text-decoration:underline; font-weight:bold; }
+
+.ems-service-list .mod-service-list-header .ems-form-inner { width:100%; display:table; }
+
+.ems-service-list .mod-service-list-header .ems-form-inner .ems-field:nth-child(1) { display:none; }
+
+.ems-service-list .mod-service-list-header .ems-form-inner .ems-field:nth-child(4) { padding-right:0; }
+
+.ems-service-list .mod-service-list-header .ems-form-inner .ems-field select { font-size:18px; }
+
+.ems-service-list .mod-service-list-header .ems-form-inner .ems-field .ems-form-label, .ems-service-list .mod-service-list-header .ems-form-inner .ems-field input { display:none; }
+
+.ems-service-list .mod-service-list-header .ems-form-inner .ems-field .ems-form-obj a { width: 100%; padding: 11px 0 14px 0; }
+
+.ems-service-list .mod-service-list-header .ems-form-inner .ems-field .ems-form-obj a span { font-size: 14px; }
+
+.ems-service-list .mod-service-list-header .ems-form-inner > div { /*width: 33.333%;*/ width: 100%;}
+
+.ems-service-list .mod-service-list-body {	padding: 0 30px;}
+
+.ems-service-list .mod-service-list-body .service-list { max-height: 400px; overflow: auto; }
+
+.ems-service-list .mod-service-list-body .service-list .pServisListe { font-size: 16px; width: 100%; display: inline-block; }
+
+.ems-service-list .mod-service-list-body .service-list .pServisListe .distance-service { display: none; }
+
+.ems-service-list .mod-service-list-body .service-list .pServisListe .divServisListe_FirmaAdi { font-size:18px; font-family:$fontMedium; }
+
+.divServisListe_ServisTur,
+.divServisListe_Adres,
+.divServisListe_UlkeSehirSemt,
+.divServisListe_Telefon,
+.divServisListe_Email a span,
+.divServisListe_Fax { font-size:16px; font-family: $fontDefault; }
+
+.ems-service-list .mod-service-list .mod-service-list-body .servisIcerik .pServisListe > * {margin-top:5px;	}
+
+.ems-service-list .mod-service-list-body .service-list .pServisListe .divServisListe_Telefon a span:before {content:"Telefon: ";}
+
+.ems-service-list .mod-service-list .mod-service-list-body .servisIcerik .pServisListe .divServisListe_Koordinat {margin-top:10px;}
+.ems-service-list .mod-service-list .mod-service-list-body .servisIcerik .pServisListe .divServisListe_Koordinat a {color:#fff;padding: 10px 20px; background-color: #000; display:inline-block; border:1px solid transparent;}
+
+.ems-service-list .mod-service-list .mod-service-list-body .servisIcerik .pServisListe.selected .divServisListe_Koordinat a {background-color:#fff;	border:1px solid #000; color:#000;}
+
+.ems-service-list .mod-service-list .mod-service-list-body .servisIcerik .pServisListe .divServisListe_Koordinat a span {    text-decoration: none;}
+
+.ems-service-list .mod-service-list-body .service-list .pServisListe .divServisListe_Koordinat a span { text-decoration:underline;}
+
+.ems-service-list .mod-service-list-body .service-list .pServisListe .divServisListe_Koordinat a span span.gs1 { display: inline-block; }
+
+.ems-service-list .mod-service-list-body .service-list .pServisListe .divServisListe_Koordinat a span span.gs2 { display: none; }
+
+.ems-service-list .mod-service-list-body .service-list .pServisListe.selected .divServisListe_Koordinat span span.gs1 { display: none; }
+
+.ems-service-list .mod-service-list-body .service-list .pServisListe.selected .divServisListe_Koordinat span span.gs2 { display: inline-block; }
+
+.ems-service-list .mod-service-list-body .service-list .address-detail { display: inline-block; width: 100%; margin-bottom: 45px; }
+
+.ems-service-list .mod-service-list-body .service-list .address-detail-inner .back-btn { display: none; }
+
+.ems-service-list .mod-service-list-body .service-list .address-detail-inner .left-column { /*width:323px;*/ float: left; }
+
+.ems-service-list .mod-service-list-body .service-list .address-detail-inner .left-column .title { background: #0262b7; font-size: 18px; letter-spacing: 0.6px; padding: 15px; text-align: center; font-family: "DR"; color: #fff; max-height: 76px; }
+
+.ems-service-list .mod-service-list-body .service-list .address-detail-inner .left-column .title span { display: block; }
+
+.ems-service-list .mod-service-list-body .service-list .address-detail-inner .left-column .detail { display: none; }
+
+.ems-service-list .mod-service-list-body .service-list .address-detail-inner .left-column .work-table > span { display: none; }
+
+.ems-service-list .mod-service-list-body .service-list .address-detail-inner .left-column .work-table table { border-collapse: collapse; width: 100%; height: 367px; text-align: center; }
+
+.ems-service-list .mod-service-list-body .service-list .address-detail-inner .left-column .work-table table tr th { width: 188px; border: 1px solid #d8d8d8; font-family: "DM"; font-size: 16px; color: #002b5c; border-bottom: 0; border-top: 0; }
+
+.ems-service-list .mod-service-list-body .service-list .address-detail-inner .left-column .work-table table tr td { width: 135px; background: #f0f3f5; border: 1px solid #d8d8d8; font-size: 16px; color: #002b5c; font-family: "DR"; }
+
+.ems-service-list .mod-service-list-body .service-list .address-detail-inner .left-column .work-table table tr:last-child th { border-bottom: 1px solid #d8d8d8; }
+
+.ems-service-list .mod-service-list-body .service-list .address-detail-inner .right-column { /*width:auto; margin-left:323px;*/ float: right; }
+
+.ems-service-list .mod-service-list-body .servisIcerik .servis_bilgi { display: none; }
+
+.ems-service-list .mod-service-list-body .servisIcerik .service-list-group { width: 100%; display:table; margin-bottom:30px; padding-right: 20px; }
+
+.ems-service-list .mod-service-list-body .service-list .pServisListe:nth-child(2n-1) { margin-bottom: 30px; }
+
+/**/
+.address-detail .address-detail-inner .back-btn { display: none;}
+.address-detail{width:67%;overflow:hidden;-webkit-transition: height 222ms ease-in-out;-moz-transition: height 222ms ease-in-out;-o-transition: height 222ms ease-in-out;transition: height 222ms ease-in-out;}
+.address-detail .left-column{width:100%;display:none;}
+.address-detail .right-column{width:100%;}
+.address-detail .map{width:100%;height:443px;}
+.mod-service-list > div { float: right; }
+.mod-service-list .mod-service-list-inner { width: 33%;}
+.mod-service-list { width: 100%; display: inline-block;  margin: 50px 0;	min-height:545px; }
+
+@media screen and (max-width: $breakpointSM) { 
+    .ems-service-list .mod-service-list-header span[id$='lbfKUTU_YETKILISERVISLER'] { text-align: center; font-size: 18px; display:none;} 
+    .mod-service-list .mod-service-list-inner,
+    .address-detail {width: 100%;}
+    .mod-service-list {margin-top:0;}
+    .ems-service-list .mod-service-list-header {
+        padding: 0px;
+        margin: 30px 0px;
+    }
+    .ems-service-list .mod-service-list-body { padding: 0px; }
+}
+
+@media screen and (max-width: $breakpointSM) { 
+.ems-service-list .mod-service-list-header .ems-form-inner { display: block; }
+.ems-service-list .mod-service-list-header .ems-form-inner .ems-field { display: block; }
+.ems-service-list .mod-service-list-header .ems-form-inner > div { width: 100%; }
+.ems-service-list .mod-service-list-header .ems-form-inner .ems-field { padding-right: 0; }
+.ems-service-list .mod-service-list .mod-service-list-body .servisIcerik .pServisListe { display: inline-block; width: 100%; padding: 0; border-bottom: 1px solid #d8d8d8 !important; margin-bottom: 50px; padding-bottom: 50px !important; }
+.ems-service-list .mod-service-list .mod-service-list-body .servisIcerik .pServisListe:first-child { border: 0; padding: 0; }
+.ems-service-list .mod-service-list .mod-service-list-body .servisIcerik .pServisListe div { float: none !important; max-width: none !important; word-break: break-word; }
+.ems-service-list .mod-service-list .mod-service-list-body .address-detail { display: none; }
+.ems-service-list .mod-service-list.show-address-detail .service-list-group { display: none !important; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened { width: 100%; height: 100%; z-index: 500; display: block; top: 80px; left: 0; overflow-y: auto; background: #fff; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .back-btn { border-top: 3px solid #0262b7; display: block; width: 100%; background: #fff; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .back-btn a { font-size: 18px; padding: 20px; display: inline-block; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .back-btn a i:before { content: '\e90c'; font-family: 'icomoon'; color: #0262b7; font-size: 14px; margin-right: 30px; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column { width: 100%; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .detail { display: block; font-size: 18px; padding: 0 30px; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .detail .distance-service, .ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .detail .divServisListe_Koordinat { display: none; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .detail .divServisListe_FirmaAdi { font-size: 18px; margin-top: 20px; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .detail .tableServisCalismaSaatleri { margin-top: 40px; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .detail .tableServisCalismaSaatleri table { border-collapse: collapse; width: 100%; height: 367px; text-align: center; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .detail .tableServisCalismaSaatleri table tr th { width: 188px; border: 1px solid #d8d8d8; font-family: "DM"; font-size: 16px; color: #002b5c; border-bottom: 0; border-top: 0; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .detail .tableServisCalismaSaatleri table tr td { width: 135px; background: #f0f3f5; border: 1px solid #d8d8d8; font-size: 16px; color: #002b5c; font-family: "DR"; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .detail .tableServisCalismaSaatleri table tr:last-child th { border-bottom: 1px solid #d8d8d8; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .detail .tableServisCalismaSaatleri table tr:first-child { border-top: 1px solid #d8d8d8; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .detail .tableServisCalismaSaatleri .service-work-hours { background: #0262b7; font-size: 18px; letter-spacing: 0.6px; padding: 15px; text-align: center; font-family: "DM"; color: #fff; max-height: 76px; display: inline-block; width: 100%; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .work-table, .ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .title { display: none; }
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .left-column .work-table > span { display: block; }
+
+.ems-service-list .mod-service-list.show-address-detail .address-detail.opened .address-detail-inner .right-column { width: 100%; }
+    .address-detail-show .site-content { width: 100%; }
+    .address-detail-show .mobilAltMenu { display: none; }
+	.show-address-detail .address-detail .left-column {display:block;}
+}

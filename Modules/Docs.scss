@@ -1,0 +1,36 @@
+/*.mod-docs {
+    ul {
+        > li {
+            padding: 10px 20px;
+            &:first-child {padding-top: 0;}
+            > .title {
+                display: block;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+            > .dwn {
+                font-size: $fontSizeDefault;
+                color: #666;
+                position: relative;
+                    &:after,
+                    &:before{
+                        content:'';
+                        position: relative;
+                        display:inline-block; 
+                        vertical-align:middle; 
+                        text-indent:-999em; 
+                        transition: all 0.2s ease;
+                        font-size: 0px;
+                    }
+                    &:after{
+                        position: absolute;
+                        left: 0;
+                        top: -8px;
+                    }
+                    &:before{
+                        margin-right: 5px;
+                    }
+            }
+        }
+    }
+}*/

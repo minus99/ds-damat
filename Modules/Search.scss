@@ -1,0 +1,266 @@
+.mod-mini-search-dsk {
+    float: right;
+    padding: 16px 10px;
+    position: absolute;
+    right: 230px;
+    z-index: 20; 
+}
+.mod-mini-search {
+    &-header{
+        > span {
+            display: block;
+            line-height: 15px;
+            span, span i{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            span {
+                font-family: $fontDefault;
+                font-size: $fontSizeDefault;
+            }
+            .icon-ico_search {
+                width: 15px;
+                height: 15px;
+                margin-left: 7px;
+                display: inline-block;
+                vertical-align: middle;
+                &:before {
+                    color:$lightBlue;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .icon-ico_close {
+            display: none;
+        }
+    }
+    &-body {
+        @include transition(opacity .32s ease);
+        display: none;
+        position: absolute;
+        top: 13%;
+        right: 30px;
+        width: 100%;
+        max-width: 290px;
+        opacity: 0;
+        .ems-form{
+            .ems-field.text{
+                margin: 0;
+                input{
+                    height: 40px;
+                    line-height: 40px;
+                    padding-left: 0;
+                    background: $colorWhite;
+                    border: none;
+                    border-bottom: 2px solid #82a2e7;
+                    font-size: 14px;
+                    color: #a3a4a7;
+                    width: 120px;
+                    float: right;
+                }
+            }
+            .ems-field.submit{
+                display: none;
+            }
+        }
+    }
+    &-footer{
+        display: none;
+    }
+}
+
+.site-search-visible {
+    .ems-custom-vail.login {
+        opacity: 1;
+        display: block;
+    }
+    .mod-mini-search { 
+        &-body{
+            opacity: 1;
+            display: block;
+        }
+    }
+}
+
+.searchSuggestDiv {
+    width: 340px !important;
+    padding:30px;
+    top: 40px;
+    background: $colorWhite; 
+    right: -40px;
+    left: auto !important;
+    height: 415px;
+    overflow: auto;
+    .searchSuggestDivHolder {
+        .prd {
+            h3 {
+                color:$colorDefault;
+                text-indent: -9999px;
+                padding:15px 0px 15px 0px;
+                margin:0;
+                font-weight: normal;
+                font-family: $fontMedium;
+                small {
+                    text-indent: 0;
+                    float:left;
+                    font-size: 14px;
+                }
+            }
+        }
+        .cat {
+            display:none;
+        }
+        .sHolder {
+            max-height: 100%;
+            overflow: auto;
+            table tr th {
+                width: 47px;
+            }
+            table tr td {
+                &:first-of-type {
+                    width: 129px !important;
+                }
+                &:nth-of-type(2),
+                &:nth-of-type(4),
+                &:last-of-type {display: none;}
+            }
+            img {
+                display:block;
+            }
+            div {
+                display: block;
+                cursor:pointer !important;
+                font-family: $fontLight;
+                padding: 10px 0px;
+                font-size: 13px;
+                border-bottom: 1px solid $borderColor;
+                &:first-child {
+                    border-top: 1px solid $borderColor;
+                }
+            }
+            div:last-child {
+                border:0;
+            }
+            span {
+                color:$colorDefault;
+                font-weight: normal;
+                padding:0 10px;
+                display:block;
+                b {
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+/*Search icin ara düzenleme*/
+@media screen and (max-width: $breakpointMD) {
+    .mod-mini-search {
+        &-body{
+    
+        }
+    }
+}
+
+
+ .searchSuggestDivHolder .suggest_urnsmallimg,
+  .searchSuggestDivHolder .suggest_urnurunkod,
+  .searchSuggestDivHolder .suggest_urnnormalprice { display: none !important; }
+
+  .searchSuggestDivHolder .suggest_urnprice { padding: 0px !important; text-align: right; }
+  .searchSuggestDivHolder .suggest_urnprice span {
+    display: inline !important;
+    padding: 0px !important;
+  }
+
+  @media screen and (max-width: $breakpointSM) {
+    .mod-mini-search-body {
+        max-width: 100%;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 9;
+        transform: scale(0.7);
+        .ems-form .ems-field.text input {
+            float: none;
+            width: 100%;
+            border: none;
+            height: 50px;
+            padding: 12px 25px;
+            background-color: #F4F4F4;
+        }
+    }
+    .mod-mini-search-header {
+        position: absolute;
+        right: 80px;
+        top: 20px;
+        transition: all 0.3s ease;
+        z-index: 10;
+        > span {
+            span {
+                display: none;
+            }
+            .icon-ico_search {
+                width: auto;
+                height: auto;
+                &::before {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .search-animate {
+        .mod-mini-search-body {
+            top: 64px;
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+            transition: all 0.3s ease;
+        }
+    }
+    .searchSuggestDiv {
+        width: 100% !important;
+        top: 50px;
+        left: 0px !important;
+        height: calc(100vh - 50px);
+    }
+    .search-focused {
+        overflow: hidden;
+        height: 100vh;
+        .mod-mini-search-body {
+            position: fixed;
+            top: 0px;
+        }
+        .mod-mini-search-footer {
+            position: fixed;
+            top: 49px;
+            height: calc(100vh - 50px);
+            width: 100%;
+            left: 0px;
+            background-color: $colorWhite;
+            display: block;
+             ul {
+                 display: none;
+             }
+        }
+        .mod-mini-search-header {
+            top: 15px;
+            right: 30px;
+            .icon-ico_close {
+                display: block;
+                position: absolute;
+                right: 0px;
+                top: 2px;
+                z-index: 10;
+            }
+            .icon-ico_search {
+                display: none;
+            }
+        }
+    }
+}

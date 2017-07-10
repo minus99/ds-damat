@@ -1,0 +1,58 @@
+a.btnDefault, a.lnkSipTekrarla{
+    position: relative;
+    display: inline-block;
+    background: $colorDefault;
+    padding: 17px 20px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+    font-weight: normal;
+    @include transition(all 0.32s ease);
+    &:hover {
+        background: $darkBlue;
+    }
+    span{
+        font-size: 16px;
+        color: #fff;
+    }
+    @at-root {
+        &-text, a.btnAdresListeGuncelle, a.btnAdresListeSil, a.btnSatisSozlesmeOnizle, a.btnOnBilgilendirmeFormOnizle, a.btnSozlesmeYazdir, a.btnSozlesmeYazdir{
+            background: none;
+            padding: 0;
+            color: inherit;
+            &:hover {
+                background: inherit;
+            }
+        }
+        &-full, .pageLogin_btnFacebookLogin > table, a.btnFacebookLogin, a.btnYeniUyeKaydet, a.btnLogin {
+            width: 100%;
+        }
+        .urunDetay_btnSepeteAt > table, .urunListe_favoriEkle > table, .urunDetay_btnStokHaberci > table, .ems-cart-coupon > table, .pageLogin_btnFacebookLoginKutu > table, .pageLogin_btnFacebookLogin > table, .pageLogin_btnUyeSifreGonder > table {
+            display: table !important;
+        }
+        a.btnFacebookLogin, a.btnFacebookLogin:hover{
+           background: #3b5998;
+        }
+        a.btnFacebookLogin{
+            padding-top: 17px;
+            padding-bottom: 17px;
+            .fb-wrp{
+                position: absolute;
+                top: 12px;
+                left: 5px;
+                width: 40px;
+                height: 30px;
+                line-height: 30px;
+                .icon-ico_fb {
+                    line-height: 30px;
+                    &:before{
+                        font-size: 16px;
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

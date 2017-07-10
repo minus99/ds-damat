@@ -1,0 +1,60 @@
+/*
+.mod-payment-options {
+    position: relative;
+}
+
+.popupTaksit {
+    .gridTaksitBanka {
+        width: 100%;
+        max-width: $siteContainerWidth;
+        margin: 0 auto;
+        table {
+            width: 100%;
+            border-spacing: 0;
+         }
+         td {padding: 0;}
+        .gridRowTaksitBanka {
+            vertical-align: top;
+            padding-left: 2px;
+            &:first-child {padding-left: 0;}
+            .taksit_banka {
+                font-size: 0;
+                > span {
+                    display: block;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .gridTaksitSecenek {
+                table-layout: fixed;
+                th, td {
+                    border: 1px solid #ebebeb;
+                    text-align: center;
+                    padding: 15px;
+                }
+                .gridHeaderTaksitSecenek {
+                    background: #fff;
+                    th {
+                        color: #333;
+                        &:first-child {
+                            width: 30%;
+                        }
+                    }
+                }
+                .gridRowTaksitSecenek, .gridAlternateTaksitSecenek {
+                    td {
+                        color: #666;
+                        &:first-child {
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .popupTitleTaksit, .popupTaksit_lbfAciklama {
+        display: none !important;
+    }
+}
+*/

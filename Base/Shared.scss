@@ -1,0 +1,126 @@
+::selection {background: #cf0a2c; color: #FFFFFF; text-shadow: 0 1px 3px #000000;}
+::-moz-selection {background: #cf0a2c; color: #FFFFFF; text-shadow: 0 1px 3px #000000;}
+
+body {
+	overflow-x: hidden;
+	color: $colorDefault;
+}
+body table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse; 
+}
+body img {
+	border:none;
+}
+body a {
+	outline: none;
+}
+span.pb1 {display:none;} 
+
+.tl-icon {font-family: $fontTL;} 
+
+span[id$='lbfURN_KDVDAHILSATIS'], span[id$='lbfURN_KDVDAHILSATISILK']  {display:none;}
+
+.minusNumKeyPadWrapper .minusNumKeyPad ul.keyPadList > li > a{ line-height: 20px !important;}
+.minusNumKeyPadWrapper{ width: 100% !important;}
+.geneltelefon { width: 100% !important; }
+#ui-datepicker-div { font-size: 1em !important; }
+
+i {
+	font-style: normal;
+}
+
+h1 {
+	font-weight: normal;
+}
+h2 {
+	font-weight: normal;
+}
+
+
+b {font-weight: normal;}
+
+//item list
+[class*="item-"] {
+	 > * {
+		display: inline-block;
+		vertical-align: top;
+	}
+	&.item-2 > * {
+		width: 50%;
+	}
+	&.item-3  > * {
+		width: (100% / 3);
+	}
+	&.item-4  > * {
+		width: 25%;
+	}
+}
+
+.vAlign {
+	@include vAlign;
+}
+
+.filter-ajx-loading {
+	&:after {
+		content:'';
+		background:#FFF;
+		opacity:.5;
+		width:100%;
+		height:100%;
+		position:fixed;
+		top:0;
+		left:0;
+		z-index:25;
+	}
+	&:before {
+		content:'';
+		background:url(#{$baseHref + "/images/frontend/loading.gif"}) no-repeat center center;
+		width:100%;
+		height:100%;
+		position:fixed;
+		top:0;
+		left:0;
+		z-index:11;
+	}
+}
+
+.ems-message, .pageLogin_yeniUyelikHata, .pageErrorUyeSifre, .pageErrorSifremiUnuttum, .pageSifremiUnuttum_mesaj,.ems-page-new-address .pageErrorDefault {
+	padding: 15px;
+	font-size: 14px;
+	color: #fff;
+}
+.ems-message-error, .pageLogin_yeniUyelikHata, .pageErrorUyeSifre, .pageErrorSifremiUnuttum, .ems-page-new-address .pageErrorDefault {
+	background: $errorColor;
+}
+.ems-message-success, [id$="pnlBasariliGuncellendi"].pageErrorUyeSifre, .pageSifremiUnuttum_mesaj {
+	background: #33cc33;
+}
+.pageLogin_yeniUyelikHata {
+	color: #fff !important;
+}
+.ems-error-prd{
+	max-width: 780px;
+    margin: 0 auto;
+	width: 100%;
+}
+.ems-left { float: left; }
+.ems-right { float: right; }
+
+.zorunluFont {
+	&:before{
+		content: "*";
+		font-size: 14px;
+		margin-right: 3px;
+	}
+}
+
+//css empty
+.page-cart .ems-page-order-payment .ems-cart-pay-type .ems-pay-other, 
+.ems-message,
+.page-member .ems-page-member-order-detail .order-detail-info-payment > div > div {
+    &:empty {
+        display: none !important;
+    }
+}

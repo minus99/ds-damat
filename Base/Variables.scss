@@ -1,0 +1,36 @@
+// General Definations
+//
+$baseHref: '';
+//$baseHref: '//dsdamat.proj-e.com/'; 
+
+// Typography
+$fontTL: "TL";
+$fontDefault: "PB"; 
+$fontLight: "PL";
+$fontBold: "PBOLD";
+$fontMedium: "PM";
+$fontOther: "NM";
+$fontWg: normal;
+$fontSizeDefault: 14px;
+
+// Colorsp
+$colorDefault: #000;
+$colorWhite: #ffffff;
+$borderColor: rgba(151,151,151,.5);
+$lightBlue:#82a2e7;
+$darkBlue:#3561be;
+$errorColor:red;
+
+// Layout
+$siteContainerWidth: 100%;
+$siteContainerWidthFull: 1300px;  
+$singleOuter: 1.6rem;
+
+//Background Cover
+$bgCover: cover;
+
+//Background Repeat
+$noRepet: no-repeat;
+
+//Background Align
+$bgCenter:center center;

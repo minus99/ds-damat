@@ -1,0 +1,204 @@
+/*Hidden Layout*/
+.icerikListePagingUst,
+.icerikListePagingAlt { display: none; }
+
+/*Layout Fix Width*/
+.site-content, .ems-page, .site-header, .site-footer, .row{
+    width: 100%;
+}
+
+/*Layout Header Top Margin*/
+.page-height-fixed{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    &.pageError {
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        .cart-discount-section {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+/*Layout Control*/
+.ems-container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 0 20px;
+}
+
+/*Page Layout Header Span*/
+.pageHeaderDefault {
+    span { font-family: $fontBold; font-size: 36px; letter-spacing: 3px; }
+}
+
+/*Kurumsal*/
+.page-content {
+    .ems-page-corporate {
+        .page-top-title {
+            span {font-family: $fontBold; font-size: 36px; letter-spacing: 3px; }
+        }
+    }
+    .ems-page-default {
+        p{ font-size: 16px; line-height: 30px; margin: 0; }
+        ul li {font-size: 16px; line-height: 30px;}
+    }
+}
+
+/*Hata Sayfaları*/
+.pageError {
+    .errorHolder { 
+        text-align: center;
+        .error-text {
+            padding: 50px 0;
+            span {
+                font-size: 40px;
+                font-family: $fontMedium;
+            }
+            p {
+                font-size: 18px;
+                img {
+                    margin-top: 30px;
+                }
+            }
+            a.btnDefault {
+                max-width: 260px;
+                width: 100%;
+                margin-top: 30px;
+            }
+        } 
+    }
+    .errorHolder > * {
+        display: inline-block;
+    }
+}
+
+/*Kutu Menü*/
+.kutuSolMenuTree {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    .kutuHeaderSolMenuTree {
+        display: none;
+    }
+    .kutuBodySolMenuTree {
+        > ul > li > a {
+            font-size: 16px;
+            color: #a3a4a7;
+            line-height: 1;
+            margin: 0;
+            padding: 15px 0;
+            display: block;
+        }
+        > ul > li > ul > li a {
+            padding: 10px 0;
+            font-size: 16px;
+            color: #a3a4a7;
+            line-height: 20px;
+            display: block;
+            @include transition (all .32s ease);
+        }
+        > ul > li > ul > li.act a, > ul > li > ul > li a:hover{
+            color: $colorDefault;
+        }
+    }
+}
+
+/*İçerik Accordion*/
+.content-tab {
+    .ems-tab-inner {
+        ul.content-js > li { display: block; }
+        ul.content-js > li > a.title { font-family:$fontMedium; font-size:18px; display:block; padding:10px 0; position:relative; }
+        ul.content-js > li .content, ul.content-js > li .content p{ margin: 0; }
+        ul.content-js > li .content img, ul.content-js > li.selected .content img{ float: none; margin: 0;}
+        ul.content-js > li.selected .content { height: auto; overflow: visible; opacity: 1; }
+    }
+}
+
+.warning-details {
+    .warning-line {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(155,155,155,.5);
+        .boxes {
+            min-height: 85px;
+            vertical-align: top;
+            display: inline-block;
+            width:50%;
+            text-align: left;
+            .boxes-img {
+                float: left;
+            }
+            .boxes-txt {
+                padding: 5px 0 0 130px;
+            }
+        }
+        &:first-child {
+            border-top: none;
+        }       
+    }
+}
+
+@media screen and (max-width: $breakpointSM) {
+    /*Layout Header Top Margin*/
+    .page-height-fixed{ margin-top: 0; }
+
+    /*Layout Control*/
+    .ems-container{
+        max-width: 100%;
+        padding: 0 ;
+    }
+    .kutuSolMenuTree {
+        .kutuHeaderSolMenuTree {
+            display: block;
+            background-color: #213766;
+            color: $colorWhite;
+            padding: 20px 30px;
+            width: 100%;
+            font-size: 18px;
+            &::after {
+                content: "\e902";
+                display: inline-block;
+                float: right;
+                font-family: 'icomoon';
+            }
+        }
+        .kutuBodySolMenuTree {
+            display: none;
+            > ul {
+                .sev1 {
+                    > a {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .kutuSolMenuTree {
+        position: relative;
+        padding: 0px;
+        width: 100% !important;
+        margin-top: 50px;
+        &.opened {
+            .kutuBodySolMenuTree {
+                display: block;
+                position: absolute;
+                background-color: white;
+                width: 100%;
+                left: 0;
+                z-index: 9;
+                top: 61px;
+                padding: 10px 30px;
+            }
+
+        }
+    }
+}

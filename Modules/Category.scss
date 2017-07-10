@@ -1,0 +1,165 @@
+.kutuKategori {
+    text-align: left;
+    .kutuHeaderKategori {display:none;}
+        .menuKategori {
+            li.s1 {
+                position: relative;
+                > b{
+                    @include setAbsolute();
+                    height: 50px;
+                    z-index: 1;
+                    cursor: pointer;
+                }
+                > a {
+                    width: 100%;
+                    font-size:14px;
+                    color:$colorDefault;
+                    padding: 15px 30px 15px 0;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    position: relative;
+                    border-bottom: 1px solid rgba(0,0,0,.5);
+                &:before{
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    margin-top: -7px;
+                    content: '\e902';
+                    font-family: 'icomoon';
+                    font-size: 10px;
+                    width: 10px;
+                    height: 10px;
+                    display:inline-block;
+                    cursor:pointer;
+                }
+            }
+        }
+        li.s1.opened{
+            > a{
+                &:before{
+                    content: "\e906";
+                }
+            }
+        }
+        /*li.s1:first-child{
+            > a{
+                border: none;
+            }
+        }*/
+        li.s2 {
+            > a {
+                width: 100%;
+                font-size: $fontSizeDefault;
+                letter-spacing: .4px;
+                font-family: $fontLight;
+                display: inline-block;
+                font-weight: 300;
+                object-fit: contain;
+                padding: 10px 0;
+                @include transition(all 0.2s ease);
+            }
+            > a:hover{
+                
+            }
+        }
+        ul {
+            padding: 20px 0 0 0;
+            display: none;
+            li {
+                width: 100%;
+                display: inline-block;
+                position: relative;
+            }
+            li.s2 {
+                b {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid rgba(0,0,0,.5);
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                }
+                > a {
+                    width: 100%;
+                    font-size: $fontSizeDefault;
+                    letter-spacing: .4px;
+                    font-family: $fontLight;
+                    display: inline-block;
+                    font-weight: 300;
+                    object-fit: contain;
+                    padding: 10px 10px 10px 30px;
+                }
+                ul {
+                display: none;
+                padding: 15px 0;
+                }
+                &.act {
+                    b {
+                        background: $colorDefault;
+                    }
+                } 
+            }
+            li.s3 {
+                a {
+                    width: 100%;
+                    font-size: $fontSizeDefault;
+                    letter-spacing: .4px;
+                    font-family: $fontLight;
+                    display: inline-block;
+                    font-weight: 300;
+                    object-fit: contain;
+                    padding: 10px 10px 10px 30px;
+                }
+                a.active {
+                    
+                }
+            }
+        }
+        ul.opened {
+            display: block;
+        }
+    }
+}
+/*Mobile*/
+@media screen and (max-width: $breakpointSM){
+    .kutuKategori {
+        .menuKategori{
+            li.s1{
+                > a{
+                    font-size:18px;
+                    letter-spacing: 3px;
+                    padding-left: 0;
+                    &:before{
+                        content: "\e9a4";
+                        background: none;
+                        width: 20px;
+                        height: 20px;
+                        font-size: 20px;
+                        margin: 0;
+                        display: block;
+                        margin-top: -10px;
+                    }
+                }
+            }
+            li.s1.opened{
+                > a{
+                    &:before{
+                        content:"\e999";
+                        width: 20px;
+                        height: 20px;
+                        font-size: 20px ;
+                        color: $colorDefault;
+                        margin-top: -10px;
+                    }
+                }
+            }
+            ul li.s2 {
+                > a{
+                    font-size: 18px;
+                }
+            }  
+        }
+    }
+}
