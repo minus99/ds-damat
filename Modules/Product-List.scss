@@ -988,13 +988,12 @@
     overflow: hidden;
     position: fixed;
     top: 0;
-    .popup.popup-sort { display: block; }
+    .popup.popup-sort { display: block; height: 100%;}
  } 
 .sort-popup-animate {
     .catImg { height: 200px; @include setTransform(translateY(-65px)); }
-    .mobile-header { @include setTransform(translateY(-65px));}
     .popup.popup-sort{ bottom: 0; }
-    .popup.popup-sort .popup-header { display: block; }
+    .popup.popup-sort .popup-header { display: block; z-index: 9;}
     }
     .system-widget .bx-controls {
         display: block;

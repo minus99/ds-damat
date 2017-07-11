@@ -4,6 +4,7 @@
         .menuKategori {
             li.s1 {
                 position: relative;
+                display: none;
                 > b{
                     @include setAbsolute();
                     height: 50px;
@@ -34,6 +35,7 @@
                     cursor:pointer;
                 }
             }
+            &.sel {display: block;}
         }
         li.s1.opened{
             > a{

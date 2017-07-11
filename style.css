@@ -9220,20 +9220,18 @@ input[type="checkbox"], input[type="radio"] {
     position: fixed;
     top: 0; }
     .sort-popup-ready .popup.popup-sort {
-      display: block; }
+      display: block;
+      height: 100%; }
   .sort-popup-animate .catImg {
     height: 200px;
-    -webkit-transform: translateY(-65px);
-    -ms-transform: translateY(-65px);
-    transform: translateY(-65px); }
-  .sort-popup-animate .mobile-header {
     -webkit-transform: translateY(-65px);
     -ms-transform: translateY(-65px);
     transform: translateY(-65px); }
   .sort-popup-animate .popup.popup-sort {
     bottom: 0; }
   .sort-popup-animate .popup.popup-sort .popup-header {
-    display: block; }
+    display: block;
+    z-index: 9; }
   .system-widget .bx-controls {
     display: block; }
   .page-list .urnList {
@@ -9315,7 +9313,8 @@ input[type="checkbox"], input[type="radio"] {
             }
         }*/ }
     .kutuKategori .menuKategori li.s1 {
-      position: relative; }
+      position: relative;
+      display: none; }
       .kutuKategori .menuKategori li.s1 > b {
         position: absolute;
         left: 0;
@@ -9347,6 +9346,8 @@ input[type="checkbox"], input[type="radio"] {
           height: 10px;
           display: inline-block;
           cursor: pointer; }
+      .kutuKategori .menuKategori li.s1.sel {
+        display: block; }
     .kutuKategori .menuKategori li.s1.opened > a:before {
       content: "\e906"; }
     .kutuKategori .menuKategori li.s2 > a {
@@ -10351,7 +10352,10 @@ a.cloud-zoom {
 .ems-prd-detail-inner .ems-prd-code {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.5);
-  font-family: "PB"; }
+  font-family: "PB";
+  margin-bottom: 10px; }
+  .ems-prd-detail-inner .ems-prd-code::before {
+    content: 'Ürün Kodu: '; }
 
 .ems-prd-detail-inner .ems-prd-cat-name {
   margin-top: 20px;

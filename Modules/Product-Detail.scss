@@ -374,6 +374,8 @@ a.cloud-zoom {
                 font-size: 13px;
                 color: rgba(0,0,0,0.5);
                 font-family: $fontDefault;
+                margin-bottom: 10px;
+                &::before {content: 'Ürün Kodu: ';}
             }
             &-cat-name {
                 margin-top: 20px;
