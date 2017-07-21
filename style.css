@@ -11720,6 +11720,9 @@ a.btnMinPpCl {
 .visilabs-widget .bx-default-pager {
   margin: 32px 0; }
 
+.system-widget .swiper-slide img {
+  opacity: 1 !important; }
+
 .ems-grid-default > div {
   position: relative;
   display: table;
