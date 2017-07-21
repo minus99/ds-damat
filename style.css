@@ -4041,6 +4041,26 @@ input[type="checkbox"], input[type="radio"] {
     input[type="checkbox"] + span a, span.checkbox + span a, input[type="radio"] + span a {
       text-decoration: underline; }
 
+.ems-page-form {
+  padding-bottom: 50px; }
+  .ems-page-form .xmlFormHeader {
+    display: none; }
+  .ems-page-form .xmlFormContent {
+    max-width: 500px; }
+  .ems-page-form .kurumsalForm > div {
+    margin-top: 30px; }
+  .ems-page-form h4 {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 20px 0px; }
+  .ems-page-form .xmlForm_btnGonder {
+    margin-top: 30px; }
+  .ems-page-form .formline > span:first-child {
+    display: inline-block;
+    margin-bottom: 5px; }
+  .ems-page-form textarea {
+    height: 85px; }
+
 /*
  * about-full-page
  */

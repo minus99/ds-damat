@@ -105,3 +105,31 @@ input[type="checkbox"], input[type="radio"] {
         }
     }
 }
+
+// form-sayfa
+
+.ems-page-form {padding-bottom: 50px;
+
+    .xmlFormHeader {display: none;}
+
+    .xmlFormContent {max-width: 500px;}
+
+    .kurumsalForm {
+
+        > div {margin-top: 30px;}
+
+    }
+
+    h4 {font-size: 27px; font-weight: bold; margin: 20px 0px;}
+
+    .xmlForm_btnGonder {margin-top: 30px;}
+
+    .formline {
+
+        > span:first-child {display: inline-block; margin-bottom: 5px;}
+
+    }
+
+    textarea {height: 85px;}
+
+}
