@@ -5870,6 +5870,17 @@ input[type="checkbox"], input[type="radio"] {
   .ems-bnr-triple .ems-bnr-txt h1 {
     font-size: 15px; } }
 
+.minPp.video-popup {
+  max-width: 95%; }
+  .minPp.video-popup a.btnMinPpCl {
+    background-color: white !important;
+    padding: 6px;
+    width: auto !important;
+    font-size: 22px;
+    height: auto !important;
+    top: 8px !important;
+    right: 8px !important; }
+
 .mod-mini-search-dsk {
   float: right;
   padding: 16px 10px;
