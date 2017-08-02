@@ -1,8 +1,8 @@
 .mod-mini-search-dsk {
     float: right;
-    padding: 16px 10px;
+    padding: 16px 10px; 
     position: absolute;
-    right: 230px;
+    right: 180px;
     z-index: 20; 
 }
 .mod-mini-search {
@@ -216,7 +216,7 @@
     }
     .search-animate {
         .mod-mini-search-body {
-            top: 64px;
+            top: 60px;
             opacity: 1;
             visibility: visible;
             transform: scale(1);

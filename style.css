@@ -5885,7 +5885,7 @@ input[type="checkbox"], input[type="radio"] {
   float: right;
   padding: 16px 10px;
   position: absolute;
-  right: 230px;
+  right: 180px;
   z-index: 20; }
 
 .mod-mini-search-header > span {
@@ -6051,7 +6051,7 @@ input[type="checkbox"], input[type="radio"] {
       .mod-mini-search-header > span .icon-ico_search::before {
         font-size: 20px; }
   .search-animate .mod-mini-search-body {
-    top: 64px;
+    top: 60px;
     opacity: 1;
     visibility: visible;
     -webkit-transform: scale(1);
