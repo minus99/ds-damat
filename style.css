@@ -5885,7 +5885,7 @@ input[type="checkbox"], input[type="radio"] {
   float: right;
   padding: 16px 10px;
   position: absolute;
-  right: 180px;
+  right: 210px;
   z-index: 20; }
 
 .mod-mini-search-header > span {
@@ -6757,7 +6757,7 @@ input[type="checkbox"], input[type="radio"] {
   .page-member .ems-page-member-follow-list .page-top-desc {
     display: none; }
   .page-member .ems-page-member-follow-list .report-holder {
-    display: none; }
+    margin-top: 20px; }
   .page-member .ems-page-member-follow-list .report-holder.selected {
     display: block; }
   .page-member .ems-page-member-follow-list .remove-list {
@@ -7017,7 +7017,21 @@ input[type="checkbox"], input[type="radio"] {
   .ems-page-member-order-detail .inner-title {
     padding-top: 30px; }
   .ems-service-list .kutuSolMenuTree {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .page-member .ems-page-member-follow-list .inner-title {
+    text-align: center; }
+  .ems-grid-follow-stock .ems-grid-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-width: 1px 1px 0 1px !important; }
+    .ems-grid-follow-stock .ems-grid-row > div {
+      border: none !important; } }
 
 .mod-mini-cart {
   float: right;

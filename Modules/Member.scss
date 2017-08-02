@@ -818,7 +818,7 @@
             display: none;
         }
         .report-holder {
-            display: none;
+            margin-top: 20px;
         }
         .report-holder.selected {
             display: block;
@@ -1197,6 +1197,14 @@
         .kutuSolMenuTree {
             margin-bottom: 50px;
         }
+    }
+
+    .page-member .ems-page-member-follow-list .inner-title {text-align: center;}
+
+    .ems-grid-follow-stock .ems-grid-row {display: flex; align-items: center; border-width: 1px 1px 0 1px !important; 
+    
+        > div {border :none !important;}
+    
     }
 
 }
