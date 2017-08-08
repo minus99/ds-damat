@@ -312,6 +312,76 @@
     }
 }
 
+// uyeliksiz alisveris
+
+.pageGuestCheckout {
+
+    .pageGuestCheckout_Desc {margin-bottom: 20px; margin-top: 20px;}
+
+    .ulGuestCheckout_member {display: flex; flex-wrap: wrap; justify-content: space-between;
+    
+        > li {width: calc(50% - 10px); margin-bottom: 20px;
+        
+           > span {display: block; margin-bottom: 5px;}
+
+           &.subTitle.b1 {font-weight: bold; font-size: 16px; width: 100%;}
+
+           &.surname + .subTile {width: 100%;}
+
+           &.district,
+           &.tcNo,
+           &.bultenFl,
+           &.smsFl {display: none;}
+
+           &:empty {display: none;}
+
+           &:first-child {display: none;}
+
+           &.email,
+           &.address {width: 100%;}
+        
+        }
+    
+    }
+
+    .divTeslimatKargo {margin-bottom: 20px;
+    
+        li {display: inline-flex; flex-direction: column; align-items: center; padding: 15px; border: 1px solid #EEEEEE; margin-top: 10px;
+        
+            input {margin-right: 0px;} 
+        
+        }
+    
+    }
+
+    .divGuestCheckout_btnGuestCheckoutSave {
+
+        > table {display: table !important;
+        
+            a {width: calc(50% - 10px);}
+        
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+    .pageDefault.pageGuestCheckout {padding: 20px;}
+
+    .pageGuestCheckout {
+    
+        .ulGuestCheckout_member {
+    
+            > li {width: 100%;}
+        
+        }
+    
+    }
+
+}
+
 //tl ikonu
 .currency-ico span font, .pnlDipToplamTable td > span {
     &:before {

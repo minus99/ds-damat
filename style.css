@@ -6408,6 +6408,17 @@ input[type="checkbox"], input[type="radio"] {
   font-size: 15px;
   color: #000; }
 
+.page-login .guest-login a {
+  position: relative;
+  display: block;
+  background: #3b5998;
+  padding: 17px 20px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+  font-weight: normal; }
+
 .ems-signup-body .ems-signup {
   display: inline-block; }
 
@@ -7298,6 +7309,76 @@ input[type="checkbox"], input[type="radio"] {
       font-size: 30px; }
   .kutuSepet .kutuBodySepet {
     display: none; }
+
+.pageGuestCheckout .pageGuestCheckout_Desc {
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.pageGuestCheckout .ulGuestCheckout_member {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .pageGuestCheckout .ulGuestCheckout_member > li {
+    width: calc(50% - 10px);
+    margin-bottom: 20px; }
+    .pageGuestCheckout .ulGuestCheckout_member > li > span {
+      display: block;
+      margin-bottom: 5px; }
+    .pageGuestCheckout .ulGuestCheckout_member > li.subTitle.b1 {
+      font-weight: bold;
+      font-size: 16px;
+      width: 100%; }
+    .pageGuestCheckout .ulGuestCheckout_member > li.surname + .subTile {
+      width: 100%; }
+    .pageGuestCheckout .ulGuestCheckout_member > li.district, .pageGuestCheckout .ulGuestCheckout_member > li.tcNo, .pageGuestCheckout .ulGuestCheckout_member > li.bultenFl, .pageGuestCheckout .ulGuestCheckout_member > li.smsFl {
+      display: none; }
+    .pageGuestCheckout .ulGuestCheckout_member > li:empty {
+      display: none; }
+    .pageGuestCheckout .ulGuestCheckout_member > li:first-child {
+      display: none; }
+    .pageGuestCheckout .ulGuestCheckout_member > li.email, .pageGuestCheckout .ulGuestCheckout_member > li.address {
+      width: 100%; }
+
+.pageGuestCheckout .divTeslimatKargo {
+  margin-bottom: 20px; }
+  .pageGuestCheckout .divTeslimatKargo li {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #EEEEEE;
+    margin-top: 10px; }
+    .pageGuestCheckout .divTeslimatKargo li input {
+      margin-right: 0px; }
+
+.pageGuestCheckout .divGuestCheckout_btnGuestCheckoutSave > table {
+  display: table !important; }
+  .pageGuestCheckout .divGuestCheckout_btnGuestCheckoutSave > table a {
+    width: calc(50% - 10px); }
+
+@media screen and (max-width: 960px) {
+  .pageDefault.pageGuestCheckout {
+    padding: 20px; }
+  .pageGuestCheckout .ulGuestCheckout_member > li {
+    width: 100%; } }
 
 .currency-ico span font:before, .pnlDipToplamTable td > span:before {
   content: "t";
