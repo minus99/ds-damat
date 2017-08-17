@@ -868,6 +868,7 @@
         width:50%;
         margin-right: 0px;
     }
+
 }
 
 @media screen and (max-width: $breakpointSM){
@@ -964,7 +965,9 @@
                     float: none;
                 }
                 a.tumunuGoster{
-                    display: none !important;
+                    width: 100%;
+                    text-align: center;
+                    float: none;
                 }
             }
         }

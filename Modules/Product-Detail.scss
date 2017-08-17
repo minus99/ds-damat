@@ -88,7 +88,7 @@
                         padding: 6px 0px;
                     }
                     .tableBagliUrun {
-                        padding: 10px 10px 40px 10px;
+                        padding: 10px;
                         position: relative;
                         display: block;
                         td {
@@ -96,7 +96,6 @@
                             display: block;
                         }
                         .urunBilgi {
-                            position: relative;
                             .dropdown-trigger {
                                 border: 1px solid $colorDefault;
                                 padding: 5px 10px;
@@ -128,6 +127,7 @@
                             .sStylerMainWrp {
                                 display: none;
                             }
+                            a::before {content: ''; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;}
                         }
                         .adet {
                             display: none;
@@ -142,6 +142,7 @@
                             bottom: 10px;
                             left: calc(50% - 47px);
                             background-color: #3561be;
+                            display: none;
                             input {
                                 width: 94px;
                                 height: 27px;
@@ -177,6 +178,7 @@
                                 }
                             }
                         }
+                        .urunDetay_urunSecenek1 {display: none;}
                     }
                 }
             }
