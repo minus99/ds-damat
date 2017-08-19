@@ -6891,8 +6891,8 @@ input[type="checkbox"], input[type="radio"] {
       font-size: 24px;
       white-space: nowrap; }
 
-.ems-page-member-order-detail .order-cancel {
-  margin-top: 15px; }
+.ems-page-member-order-detail .order-cancel .text {
+  margin: 15px 0px; }
 
 /*Mesaj Gönder*/
 .pageMesajGonder .pageHeaderMesaj span {
@@ -11941,7 +11941,7 @@ a.btnMinPpCl {
       line-height: 50px;
       text-align: center;
       background: #ffffff;
-      border-color: transparent; }
+      border-radius: 3px; }
     .ems-grid-default .ems-grid-row .ems-grid-piece > a {
       position: absolute;
       font-size: 11px;
